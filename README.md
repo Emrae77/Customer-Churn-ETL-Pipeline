@@ -31,17 +31,16 @@ The pipeline prepares data for advanced churn analytics by:
 This is done following **Delta Lake’s Medallion Architecture** using Databricks.
 
 ---
-
 ## 🔷 3. Medallion Architecture (Bronze → Silver → Gold)
 
 ```mermaid
 flowchart TD
-    A[Raw CSV Data (Local)] --> B[Bronze: Ingest to Databricks]
-    B --> C[Silver: Cleaned + Standardized Tables]
-    C --> D[Gold: Final Star Schema]
+    A[Raw CSV Data - Local] --> B[Bronze - Ingest to Databricks]
+    B --> C[Silver - Cleaned and Standardized Tables]
+    C --> D[Gold - Final Star Schema]
     D --> E[Power BI - Separate Project]
 
-```
+
 
 ---
 
