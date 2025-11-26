@@ -35,11 +35,12 @@ This is done following **Delta Lake’s Medallion Architecture** using Databrick
 ## 🔷 3. Medallion Architecture (Bronze → Silver → Gold)
 
 ```mermaid
-flowchart LR
-    A[Raw CSV Data] --> B[Bronze<br/>Raw Delta Tables]
-    B --> C[Silver<br/>Cleaned & Conformed Data]
-    C --> D[Gold<br/>Dimensional Models & Aggregations]
-    D --> E[Power BI (Separate Project)]
+flowchart TD
+    A[Raw CSV Data (Local)] --> B[Bronze: Ingest to Databricks]
+    B --> C[Silver: Cleaned + Standardized Tables]
+    C --> D[Gold: Final Star Schema]
+    D --> E[Power BI - Separate Project]
+
 ```
 
 ---
