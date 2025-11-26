@@ -1,4 +1,4 @@
-# 📉 Customer Churn Data Pipeline (Medallion Architecture — Databricks + Delta Lake)
+# 📉 Customer Churn ETL Pipeline Using the Medallion Architecture (Databricks + PySpark)
 
 This project implements a complete Medallion Architecture (Bronze → Silver → Gold) data pipeline for a **Customer Churn Analytics** use case. The goal is to transform raw banking/customer datasets into clean, conformed, analytics-ready Delta tables that support churn prediction, customer segmentation, and behavioral insights. A separate Power BI project will connect to the **Gold layer tables** to create dashboards and KPIs.
 
