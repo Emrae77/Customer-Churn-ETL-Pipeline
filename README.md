@@ -244,7 +244,7 @@ Once connected to Power BI, this pipeline enables:
 - **Lakehouse Architecture**  
 - **Dimensional Modeling / Star Schema**  
 - **Business Intelligence Concepts**  
-- External: **Power BI** (visualization in a separate repository)
+
 
 ---
 
